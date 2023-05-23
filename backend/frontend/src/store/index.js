@@ -22,8 +22,6 @@ if (process.env.NODE_ENV === 'production') {
 const configureStore = (preloadedState) => {
 
     return createStore(rootReducer, preloadedState, enhancer)
-
-
 }
 
 export default configureStore; // used by index.js to a
