@@ -1,8 +1,9 @@
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
+import sessionReducer from './session'
 
 // this is on the exam
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({session: sessionReducer}) // every k/v pair is a slice of state
 
 let enhancer; 
 
